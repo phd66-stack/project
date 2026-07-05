@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a {
+        color: blue;
+    }
+    /* Internal link , beginning with "#"*/
+    a[href^="#"]{
+        background-color: gold;
+    }
+    /*Link with "example" anything in the URL*/
+    a[href*="example"]{
+        background-color: silver;
+
+    }
+    /* Link with "insensitive" anywhere in te URL
+    regardless of capitalization*/
+    a[href*="insensitive" i]{
+        color: cyan;
+    }
+    /* Link with "cAsE" anywhere in te URL, with matching capitalzation*/
+    a[href*="cAsE" s]{
+        color: pink;
+    }
+    a[href$=".org"]{
+        color: red;
+    }
+    a[href^="https"][href$=".org"]{
+        color: green;
+    }
+
+</style>
+    <body>
+        <ul>
+            <li><a href="#internal">Internal</a></li>
+            <li><a href="http://example.com">Example link</a></li>
+            <li><a href="#Insensitive">Insensitive internal link</a></li>
+            <li><a href="http://example.org">Example org link</a></li>
+            <li><a href="https://example.org">Example https org </a></li>
+        </ul>
+    </body>
+</html>

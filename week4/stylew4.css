@@ -1,0 +1,19 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: yellowgreen;
+    margin-left: 15px;
+}
+h2 {
+    text-align: center;
+    justify-content: center;
+    color: rgb(47, 0, 255);
+}
+.span {
+    background-color: skyblue;
+}
+#span {
+    color: aquamarine;
+    background-color: blue;
+}
